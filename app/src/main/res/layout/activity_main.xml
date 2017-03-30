@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.mobileappdevelop.pricecalculator.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Price:"
+                android:textSize="25dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vat:"
+                android:textSize="25dp"
+                android:paddingTop="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount:"
+                android:textSize="25dp"
+                android:paddingTop="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/taka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Taka"
+                android:textSize="25dp"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/vat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="%"
+                android:textSize="25dp"
+                android:inputType="number"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                />
+            <EditText
+                android:id="@+id/discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="%"
+                android:textSize="25dp"
+                android:inputType="number"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:onClick="calculate"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Final Price:"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/show"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Final Amount"
+            android:textSize="25dp"/>
+    </LinearLayout>
+</LinearLayout>
+
+
